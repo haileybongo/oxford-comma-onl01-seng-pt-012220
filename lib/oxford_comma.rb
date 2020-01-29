@@ -7,7 +7,7 @@ def oxford_comma(array)
     oxford << "#{array[1]}"
   elsif array.size > 2 
     j=0
-    until j = array.size-2
+    until j == array.size-2
       oxford << "#{array[j]}, "
       j += 1 
     end
