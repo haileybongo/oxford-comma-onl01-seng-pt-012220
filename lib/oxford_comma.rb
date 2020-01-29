@@ -1,18 +1,3 @@
-def oxford_comma(array)
-  #array.join(", ")
- i = 1
- new_array = []
-  array.each do |item|
-    if array.size = 2 
-      new_array <<"#{item}, "
-      i =+ 1
-    else 
-      new_array << "and #{item}"
-end
-return item
-end
-end
-
 
 def oxford_comma(array)
   oxford
@@ -28,7 +13,14 @@ def oxford_comma(array)
       i += 1 
       j += 1
     end
+      oxford << "#{array[j]}"
       oxford << " and #{array.last}"
+    else 
+      oxford << "#{array[0]}"
+      end
+    return oxford
+    
+  end
 
     
     
