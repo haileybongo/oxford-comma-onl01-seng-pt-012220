@@ -21,11 +21,14 @@ def oxford_comma(array)
     oxford << "and"
     oxford << "#{array[1]}"
   elsif array.size > 2 
-    i = 0
-    while array.size < i 
-      oxford << "#{array[i]}"
+    i = 1
+    j = 0
+    while array.size < i-1 
+      oxford << "#{array[j], }"
+      i += 1 
+      j += 1
     end
-    oxford
+      oxford << " and #{array.last}"
 
     
     
