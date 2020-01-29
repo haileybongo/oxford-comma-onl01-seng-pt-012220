@@ -5,7 +5,6 @@ def oxford_comma(array)
     oxford << "#{array [0]}"
     oxford << "and"
     oxford << "#{array[1]}"
-  end
   elsif array.size > 2 
     i = 1
     j = 0
@@ -18,7 +17,7 @@ def oxford_comma(array)
       oxford << " and #{array.last}"
     else 
       oxford << "#{array[0]}"
-      end
+      
     return oxford
   end
 
