@@ -1,7 +1,7 @@
 
 def oxford_comma(array)
   #oxford
-  if array.size = 2 
+  if array.size == 2 
     oxford << "#{array [0]}"
     oxford << "and"
     oxford << "#{array[1]}"
