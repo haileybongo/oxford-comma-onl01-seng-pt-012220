@@ -8,19 +8,13 @@ def oxford_comma(array)
   elsif array.size > 2 
     j=0
     until j = array.size-2
-      oxford << "#{[array[j], }"
-      
+      oxford << "#{array[j], }"
+      j += 1 
     end
-    oxford << "#{[array["
+    oxford << "#{array[j+1]} and"
+    oxford << "#{array.last}"
     i = 2
     j = 0
-    while array.size < i 
-      oxford << "#{array[j], }"
-      i += 1 
-      j += 1
-    end
-      oxford << "#{array[j]}"
-      oxford << " and #{array.last}"
     else 
       oxford << "#{array[0]}"
     end
