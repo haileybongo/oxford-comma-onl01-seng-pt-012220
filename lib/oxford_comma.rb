@@ -19,7 +19,7 @@ def oxford_comma(array)
       oxford << "#{array[0]}"
       end
     return oxford
-    
+  end
   end
 
     
