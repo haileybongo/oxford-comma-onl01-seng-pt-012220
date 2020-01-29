@@ -20,6 +20,12 @@ def oxford_comma(array)
     oxford << "#{array [0]}"
     oxford << "and"
     oxford << "#{array[1]}"
-  elsif
-    array.size
+  elsif array.size > 2 
+    i = 0
+    while array.size < i 
+      oxford << "#{array[i]}"
+    end
+    oxford
+
+    
     
