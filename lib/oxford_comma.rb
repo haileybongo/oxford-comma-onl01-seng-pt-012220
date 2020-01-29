@@ -18,7 +18,7 @@ def oxford_comma(array)
     else 
       oxford << "#{array[0]}"
     end
-    return oxford
+   oxford
   end
 
     
