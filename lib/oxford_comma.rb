@@ -11,7 +11,7 @@ def oxford_comma(array)
       oxford << "#{array[j]}, "
       j += 1 
     end
-    oxford << "#{array[j]} and "
+    oxford << "#{array[j]}, and "
     oxford << "#{array.last}"
     else 
       oxford << "#{array[0]}"
